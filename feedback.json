@@ -1,0 +1,30 @@
+[
+  {
+    "vote": "up",
+    "url": "amazon.jp/grey-sweater",
+    "productName": "grey sweater",
+    "risk": "low",
+    "timestamp": "2026-05-19T01:19:10.380Z"
+  },
+  {
+    "type": "payment_help",
+    "answer": "yes",
+    "url": "amazon.jp/black-shoes",
+    "productName": "black shoes",
+    "category": "Shoes / Sneakers",
+    "shipFrom": "Japan",
+    "shipTo": "United States",
+    "timestamp": "2026-05-21T22:12:32.575Z"
+  },
+  {
+    "type": "feedback",
+    "vote": "up",
+    "url": "amazon.jp/black-shoes",
+    "productName": "black shoes",
+    "category": "Shoes / Sneakers",
+    "shipFrom": "Japan",
+    "shipTo": "United States",
+    "risk": "low",
+    "timestamp": "2026-05-21T22:12:37.021Z"
+  }
+]
