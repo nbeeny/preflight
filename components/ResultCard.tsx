@@ -112,6 +112,7 @@ export default function ResultCard({
           ${result.totalLow} – $
           {result.totalHigh} USD
         </div>
+        <div className="text-sm text-gray-500 mt-1">Based on item category, weight estimate, and courier pricing bands</div>
       </div>
 
       <div>

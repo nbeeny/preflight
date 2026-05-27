@@ -64,8 +64,16 @@ export default function Home() {
     <main className="max-w-2xl mx-auto p-6">
 
       <h1 className="text-3xl font-bold mb-6">
-        Preflight
+        ProxyPilot
       </h1>
+
+        <h2 className="text-2xl font-bold mb-6">
+            Know the real cost of buying overseas — before you checkout.
+        </h2>
+          <p>
+            ProxyPilot analyzes international shipping routes, forwarding options, 
+            and courier costs so you can buy globally without surprises.
+          </p>
 
        {result && (
         <>
@@ -155,14 +163,50 @@ export default function Home() {
         className="bg-black hover:bg-gray-800 text-white px-5 py-3 rounded-xl shadow-sm 
         transition"
       >
-        Analyze
+        Analyze a product
       </button>
 
       {loading && (
         <p className="mt-4">
-          Analyzing...
+          <div className="mt-4 text-sm text-gray-600 animate-pulse">
+            Analyzing retailer compatibility...
+          </div>
         </p>
       )}
+
+      <div class="text-sm text-gray-500 mb-1">How ProxyPilot works
+      </div>
+      <ol class="space-y-2">
+        <li class="text-sm">1. Paste a product link
+            From any international store
+        </li>
+        <li class="text-sm">2. We analyze shipping options
+            Direct, forwarding, or proxy routes
+        </li>
+        <li class="text-sm">3. Get the best way to ship it
+            With estimated cost + courier options
+        </li>
+        </ol>
+        <div class="text-sm text-gray-500 mb-1">Why ProxyPilot?</div>
+          <p>
+          International shopping is unpredictable. Shipping costs, 
+          restrictions, and forwarding requirements are often unclear until after checkout.
+        </p>
+        <div class="text-sm text-gray-500 mb-1">Built For
+        </div>
+        <ul class="space-y-2">
+        <li class="text-sm">Sneaker imports</li>
+        <li class="text-sm">Japan / US / EU shopping</li>
+        <li class="text-sm">Collectibles & hobby imports</li>
+        <li class="text-sm">Items that don’t ship internationally</li>
+        </ul>
+          
+
+
+
+
+
+
      
     </main>
   );
