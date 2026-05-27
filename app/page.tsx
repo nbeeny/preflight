@@ -70,10 +70,10 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">
             Know the real cost of buying overseas — before you checkout.
         </h2>
-          <p>
+          <div className="mt-4 mb-2 text-sm">
             ProxyPilot analyzes international shipping routes, forwarding options, 
             and courier costs so you can buy globally without surprises.
-          </p>
+          </div>
 
        {result && (
         <>
@@ -167,38 +167,38 @@ export default function Home() {
       </button>
 
       {loading && (
-        <p className="mt-4">
+        
           <div className="mt-4 text-sm text-gray-600 animate-pulse">
             Analyzing retailer compatibility...
           </div>
-        </p>
+        
       )}
-
-      <div class="text-sm text-gray-500 mb-1">How ProxyPilot works
+      <hr className="mt-2"></hr>
+      <div className="text-sm text-gray-500 mt-4 mb-2">How ProxyPilot works
       </div>
-      <ol class="space-y-2">
-        <li class="text-sm">1. Paste a product link
-            From any international store
+      <ol className="space-y-2 mb-2">
+        <li className="text-sm">1. Paste a product link
+            from any international store
         </li>
-        <li class="text-sm">2. We analyze shipping options
-            Direct, forwarding, or proxy routes
+        <li className="text-sm">2. We analyze shipping options:
+            direct, forwarding, or proxy routes
         </li>
-        <li class="text-sm">3. Get the best way to ship it
-            With estimated cost + courier options
+        <li className="text-sm">3. Get the best way to ship it
+            with estimated cost + courier options
         </li>
         </ol>
-        <div class="text-sm text-gray-500 mb-1">Why ProxyPilot?</div>
-          <p>
+        <div className="text-sm text-gray-500 mb-2">Why ProxyPilot?</div>
+          <div className="text-sm mb-2">
           International shopping is unpredictable. Shipping costs, 
           restrictions, and forwarding requirements are often unclear until after checkout.
-        </p>
-        <div class="text-sm text-gray-500 mb-1">Built For
         </div>
-        <ul class="space-y-2">
-        <li class="text-sm">Sneaker imports</li>
-        <li class="text-sm">Japan / US / EU shopping</li>
-        <li class="text-sm">Collectibles & hobby imports</li>
-        <li class="text-sm">Items that don’t ship internationally</li>
+        <div className="text-sm text-gray-500 mb-2">Built For
+        </div>
+        <ul className="space-y-2 mb-2">
+        <li className="text-sm">Sneaker imports</li>
+        <li className="text-sm">Japan / US / EU shopping</li>
+        <li className="text-sm">Collectibles & hobby imports</li>
+        <li className="text-sm">Items that don’t ship internationally</li>
         </ul>
           
 
