@@ -348,7 +348,7 @@ export default function ResultCard({
             transition
           "
         >
-          View forwarding options
+          Compare forwarding options
         </a>
       </div>
     </div>

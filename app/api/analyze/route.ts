@@ -85,6 +85,14 @@ export async function POST(req: Request) {
   const totalHigh =
     Math.round(10 + shippingHigh);
 
+  const partnerLink =
+    'https://forwarderscompare.com/scores.php' +
+    '?weight=${estimatedWeight}' +
+    '&unit=kg' +
+    '&ship=${shipTo}' +
+    '&shipdest=211'
+    '&submit=submit';
+
   return NextResponse.json({
     productName,
 
@@ -122,6 +130,6 @@ export async function POST(req: Request) {
 
     totalHigh,
 
-    partnerLink: "https://example.com",
+    partnerLink,
   });
 }
