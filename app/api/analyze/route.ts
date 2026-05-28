@@ -87,9 +87,9 @@ export async function POST(req: Request) {
 
   const partnerLink =
     'https://forwarderscompare.com/scores.php' +
-    '?weight=${estimatedWeight}' +
+    '?weight=.weight' +
     '&unit=kg' +
-    '&ship=${shipTo}' +
+    '&ship=.ShipTo' +
     '&shipdest=211'
     '&submit=submit';
 
