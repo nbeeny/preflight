@@ -62,6 +62,7 @@ export async function POST(req: Request) {
     shipFrom,
     shipTo,
     category,
+    weight,
   } = await req.json();
 
   const productName =
@@ -86,12 +87,14 @@ export async function POST(req: Request) {
     Math.round(10 + shippingHigh);
 
   const partnerLink =
-    'https://forwarderscompare.com/scores.php' +
-    '?weight=.weight' +
-    '&unit=kg' +
-    '&ship=.ShipTo' +
-    '&shipdest=211'
-    '&submit=submit';
+    `https://forwarderscompare.com/best-usa-international.php`   
+
+    console.log({
+  shipFrom,
+  shipTo,
+  weight,
+  category,
+});
 
   return NextResponse.json({
     productName,

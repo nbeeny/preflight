@@ -14,6 +14,7 @@ const countries = [
   "France",
   "Singapore",
   "South Korea",
+  "Other",
 ];
 
 const categories = [
@@ -37,28 +38,41 @@ export default function Home() {
   "Shoes / Sneakers"
 );
 
-  async function analyze() {
-    setLoading(true);
-    setResult(null);
+ async function analyze() {
+  setLoading(true);
+  setResult(null);
 
+  try {
     const res = await fetch("/api/analyze", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-    body: JSON.stringify({
-  url,
-  shipFrom,
-  shipTo,
-  category,
-}),
+      body: JSON.stringify({
+        url,
+        shipFrom,
+        shipTo,
+        category,
+      }),
     });
 
     const data = await res.json();
 
     setResult(data);
-    setLoading(false);
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 100);
+
+  } catch (error) {
+    console.error("Analyze error:", error);
   }
+
+  setLoading(false);
+}
 
   return (
     <main className="max-w-2xl mx-auto p-6">
@@ -199,15 +213,7 @@ export default function Home() {
         <li className="text-sm">Japan / US / EU shopping</li>
         <li className="text-sm">Collectibles & hobby imports</li>
         <li className="text-sm">Items that don’t ship internationally</li>
-        </ul>
-          
-
-
-
-
-
-
-     
+        </ul>     
     </main>
   );
 }
