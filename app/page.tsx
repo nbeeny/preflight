@@ -11,7 +11,7 @@ const countries = [
   "New Zealand",
   "Canada",
   "Germany",
-  "France",
+  "EU",
   "Singapore",
   "South Korea",
   "Other",
